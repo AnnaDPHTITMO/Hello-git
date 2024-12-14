@@ -1,10 +1,35 @@
 ---
 title: "Hello"
 output: html_document
+editor_options:
+  chunk_output_type: console
 ---
 
+
 ```{r setup, include=FALSE}
+library(readr)
+library(dplyr)
+
+source("data.R")
+
 knitr::opts_chunk$set(echo = TRUE)
+```
+
+
+
+
+```{r}
+modern <- top10 |>
+  filter(date >= "1980-01-01")
+head(modern)
+```
+
+```{r}
+artists <- modern |>
+  count(artist) |>
+  arrange(-n) |>
+  filter(! artist %in% c("Soundtrack", "Various Artists"))
+head(artists)
 ```
 
 ```{r}
@@ -16,4 +41,10 @@ xs
 
 ```{r}
 me <- median(xs)
+```
+
+```{r}
+artists[xs,] |>
+  arrange(-n) |>
+  gt::gt()
 ```
