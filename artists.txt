@@ -1,5 +1,18 @@
+<<<<<<< HEAD
 Barbra Streisand
 The Rolling Stones
 Metallica
 Kid Rock
 Bad Bunny
+=======
+The Rolling Stones
+Metallica
+Eagles
+James Brown
+Red Hot Chilli Peppers
+Michael Jackson
+The Beatles
+The Queen
+Apocalliptica
+Yellow Bus
+>>>>>>> 6a7c440cf563064e878f60165eed8b8e556e8b2f
