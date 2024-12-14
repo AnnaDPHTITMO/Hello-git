@@ -21,7 +21,6 @@ knitr::opts_chunk$set(echo = TRUE)
 ```{r}
 modern <- top10 |>
   filter(date >= "1980-01-01")
-head(modern)
 ```
 
 ```{r}

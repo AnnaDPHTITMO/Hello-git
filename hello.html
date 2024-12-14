@@ -354,17 +354,7 @@ display: none;
 
 
 <pre class="r"><code>modern &lt;- top10 |&gt;
-  filter(date &gt;= &quot;1980-01-01&quot;)
-head(modern)</code></pre>
-<pre><code>## # A tibble: 6 × 3
-##   date       song                                        artist       
-##   &lt;date&gt;     &lt;chr&gt;                                       &lt;chr&gt;        
-## 1 1980-01-02 On The Radio: Greatest Hits: Volumes I &amp; II Donna Summer 
-## 2 1980-01-02 Bee Gee&#39;s Greatest                          Bee Gees     
-## 3 1980-01-02 Cornerstone                                 Styx         
-## 4 1980-01-02 Journey Through The Secret Life Of Plants   Stevie Wonder
-## 5 1980-01-02 The Long Run                                Eagles       
-## 6 1980-01-02 In Through The Out Door                     Led Zeppelin</code></pre>
+  filter(date &gt;= &quot;1980-01-01&quot;)</code></pre>
 <pre class="r"><code>artists &lt;- modern |&gt;
   count(artist) |&gt;
   arrange(-n) |&gt;
